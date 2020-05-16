@@ -1,9 +1,13 @@
 #include <stdio.h>
 
-
-void ver_tablero(char tablero[64]){
-	
-	fwrite(tablero,1,64,stdout);	
+//mostrar_tablero?
+void ver_tablero(char tablero[64]){	
+	char nl = '\n'; 
+	for (int i = 0;i<8;i++){
+	       	fwrite(tablero,1,8,stdout);	
+		tablero +=8;
+		fwrite(&nl,1,1,stdout);
+	}
 }
 
 void main(){
