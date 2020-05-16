@@ -3,7 +3,7 @@
 
 void ver_tablero(char tablero[64]){
 	
-	printf(tablero);	
+	fwrite(tablero,1,64,stdout);	
 }
 
 void main(){
@@ -26,23 +26,42 @@ void main(){
 	const char VACIO = CUADRADO;
 
 
-	const char PEON_BLANCO = CUADRADO | PEON | BLANCAS;
-	const char PEON_NEGRO = CUADRADO | PEON | NEGRAS;
+	const char PB = CUADRADO | PEON | BLANCAS;
+	const char PN = CUADRADO | PEON | NEGRAS;
 
-	const char CABALLO_BLANCO = CUADRADO | CABALLO | BLANCAS;
-	const char CABALLO_NEGRO = CUADRADO | CABALLO | NEGRAS;
+	const char CB = CUADRADO | CABALLO | BLANCAS;
+	const char CN = CUADRADO | CABALLO | NEGRAS;
 
-	const char ALFIL_BLANCO = CUADRADO | ALFIL | BLANCAS;
-	const char ALFIL_NEGRO = CUADRADO | ALFIL | NEGRAS;
+	const char AB = CUADRADO | ALFIL | BLANCAS;
+	const char AN = CUADRADO | ALFIL | NEGRAS;
 
-	const char TORRE_BLANCA = CUADRADO | TORRE | BLANCAS;
-	const char TORRE_NEGRA = CUADRADO | TORRE | NEGRAS;
+	const char TB = CUADRADO | TORRE | BLANCAS;
+	const char TN = CUADRADO | TORRE | NEGRAS;
 
-	const char DAMA_BLANCA = CUADRADO | TORRE | BLANCAS;
-	const char DAMA_NEGRA = CUADRADO | TORRE | NEGRAS;
+	const char DB = CUADRADO | TORRE | BLANCAS;
+	const char DN = CUADRADO | TORRE | NEGRAS;
 
-	const char REY_BLANCO = CUADRADO | REY | BLANCAS;
-	const char REY_NEGRO = CUADRADO | REY | NEGRAS;
+	const char RB = CUADRADO | REY | BLANCAS;
+	const char RN = CUADRADO | REY | NEGRAS;
+	
+	const char PEON_BLANCO = 'P';
+        const char PEON_NEGRO = 'p';
+
+	const char CABALLO_BLANCO = 'C';
+	const char CABALLO_NEGRO = 'c';
+
+	const char ALFIL_NEGRO = 'A';
+	const char ALFIL_BLANCO = 'a';
+
+	const char TORRE_BLANCA = 'T';
+	const char TORRE_NEGRA = 't';
+
+	const char DAMA_BLANCA = 'D';
+	const char DAMA_NEGRA = 'd';
+
+	const char REY_BLANCO = 'R';
+	const char REY_NEGRO = 'r';	
+	
 	char tablero_de_blancas_a_negras_y_de_rey_a_dama[64] = {TORRE_BLANCA, CABALLO_BLANCO, ALFIL_BLANCO, REY_BLANCO, DAMA_BLANCA,ALFIL_BLANCO,CABALLO_BLANCO,TORRE_BLANCA,
 	PEON_BLANCO,PEON_BLANCO,PEON_BLANCO,PEON_BLANCO,PEON_BLANCO,PEON_BLANCO,PEON_BLANCO,PEON_BLANCO,
 	VACIO,VACIO,VACIO,VACIO,VACIO,VACIO,VACIO,VACIO,
