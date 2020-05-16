@@ -23,9 +23,9 @@ void main(){
 	const char BLANCAS = 0b00000000; 
 	const char NEGRAS = 0b01000000;
 
-	const char VACIO = CUADRADO;
+	const char VACIO = ' ';
 
-
+	const char V = CUADRADO;
 	const char PB = CUADRADO | PEON | BLANCAS;
 	const char PN = CUADRADO | PEON | NEGRAS;
 
