@@ -54,8 +54,8 @@ void main(){
 	const char CABALLO_BLANCO = 'C';
 	const char CABALLO_NEGRO = 'c';
 
-	const char ALFIL_NEGRO = 'A';
-	const char ALFIL_BLANCO = 'a';
+	const char ALFIL_BLANCO = 'A';
+	const char ALFIL_NEGRO = 'a';
 
 	const char TORRE_BLANCA = 'T';
 	const char TORRE_NEGRA = 't';
